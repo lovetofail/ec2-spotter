@@ -122,7 +122,7 @@ fi
 echo ""
 echo "Attaching volume $PERSISTENT_ROOT_VOLUME as /dev/sdf"
 # Attach volume
-${APIBIN}/ec2-attach-volume $PERSISTENT_ROOT_VOLUME -d /dev/sdf --instance $INSTANCE_ID || exit -1
+${APIBIN}/ec2-attach-volume $PERSISTENT_ROOT_VOLUME -d /dev/sdf --instance $INSTANCE_ID --region $SPOT_REGION|| exit -1
 
 while ! lsblk /dev/xvdf
 do
