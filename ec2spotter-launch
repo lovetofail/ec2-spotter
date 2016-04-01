@@ -42,7 +42,7 @@ echo AWSSecretKey=$AWSSecretKey >> /root/.aws.creds
 apt-get install -y git
 
 cd /root
-git clone https://github.com/atramos/ec2-spotter.git
+git clone https://github.com/lovetofail/ec2-spotter.git
 
 cd ec2-spotter
 ./ec2spotter-setup
